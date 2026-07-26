@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+}
+
+.seat-container{
+    padding:30px;
+}
+
+.bus-details{
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.bus-details h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.bus-details p{
+    margin:10px 0;
+    font-size:16px;
+    color:#444;
+}
+
+.seat-title{
+    text-align:center;
+    color:#1e3a8a;
+    margin:30px 0 20px;
+}
+
+.seat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+    gap:20px;
+    justify-items:center;
+    max-width:500px;
+    margin:0 auto;
+}
+
+.seat{
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.available{
+    background:#22c55e;
+}
+
+.available:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
+.booked{
+    background:#ef4444;
+    cursor:not-allowed;
+}
+
+.booked:hover{
+    transform:none;
+}
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.back-btn:active {
+  transform: scale(0.98);
+}
